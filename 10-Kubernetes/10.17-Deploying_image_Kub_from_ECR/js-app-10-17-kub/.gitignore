@@ -1,0 +1,19 @@
+# Ignore .idea folder (JetBrains IDEs like WebStorm, IntelliJ, etc.)
+.idea/
+
+# Ignore node_modules directory
+node_modules/
+
+# Optional: Ignore environment variables and other sensitive data files
+.env
+
+# Optional: Ignore log files
+*.log
+
+# Optional: Ignore build output
+dist/
+build/
+
+# Optional: Ignore OS-specific files
+.DS_Store
+Thumbs.db
