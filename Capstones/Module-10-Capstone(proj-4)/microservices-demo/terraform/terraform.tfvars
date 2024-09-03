@@ -12,16 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-terraform {
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "4.79.0"
-    }
-  }
-}
+gcp_project_id = "<project_id_here>"
 
-provider "google" {
-  project = var.gcp_project_id
-  region  = var.region
-}
+memorystore = false
