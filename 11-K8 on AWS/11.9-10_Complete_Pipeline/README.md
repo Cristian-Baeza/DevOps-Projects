@@ -24,5 +24,6 @@
 
 ## Repo
 
-Repo used is https://github.com/Cristian-Baeza/java-maven-app/tree/jenkins-jobs on 'jenkins-jobs' branch
+ - Repo used is https://github.com/Cristian-Baeza/java-maven-app/tree/jenkins-jobs on 'jenkins-jobs' branch
+ - Most relevant file copies included here. 
 

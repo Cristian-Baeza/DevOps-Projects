@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: $APP_NAME
+  labels:
+    app: $APP_NAME
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: $APP_NAME
+  template:
+    metadata:
+      labels:
+        app: $APP_NAME
+    spec:
+      imagePullSecrets:
+        - name: aws-registry-key
+      containers:
+        - name: $APP_NAME
+#          image: cbaeza1/demo-app:$IMAGE_NAME # 11.9
+          image: $DOCKER_REPO:$IMAGE_NAME  # 11.10
+          imagePullPolicy: Always # always fetch new image when pod starts
+          ports:
+            - containerPort: 8080
